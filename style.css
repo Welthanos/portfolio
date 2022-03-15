@@ -14,6 +14,10 @@
     --font-action: "Mulish", serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .hamburguer{
     width: 2rem;
     height: 2rem;
@@ -535,4 +539,115 @@ header{
     width: 20rem;
     height: 2rem;
     margin-top: 1rem;
+}
+
+.sessao-orcamento{
+    width: 100%;
+    height: 100vh;
+    background: url("images/bg-orcamento.jpg");
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orcamento-wrapper{
+    width:60%;
+    height: 80%;
+    background-color: #ffffff99;
+    border-radius: 10px;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.sessao-orcamento h1{
+    position: absolute;
+    top: -2.5rem;
+    left: 2rem;
+    background: -webkit-linear-gradient(to right, #170078, #ff4081);
+    background: linear-gradient(to right, #170078, #ff4081);
+    padding: 0 3rem;
+    color: #ffffff;
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    font-weight: lighter;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.sessao-orcamento form{
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.sessao-orcamento label{
+    font-family:var(--font-secondary);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sessao-orcamento input[type="number"]{
+    font-family:var(--font-secondary);
+    width: 4rem;
+    font-size: 2rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: .3rem;
+}
+
+.btn-orcamento{
+    text-transform: uppercase;
+    padding: 1rem;
+    grid-column: 2;
+}
+
+footer{
+    width: 100%;
+    height: 4rem;
+    background-color: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content{
+    width: 80%;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.footer-content p{
+    font-family: var(--font-primary);
+    color: #7a7a7a;
+    font-size: 1.2rem;
+}
+
+.social-list a{
+    margin: 0 2rem;
+    color: #7a7a7a;
+    font-size: 1.5rem;
+}
+
+.social-list ul{
+    display: flex;
+}
+
+#link-to-top{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background: -webkit-linear-gradient(to right, #170078, #ff4081);
+    background: linear-gradient(to top, #170078, #ff4081);
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: .3rem;
 }
